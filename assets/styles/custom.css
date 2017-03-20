@@ -2,7 +2,7 @@
 	background-color: black;
 }
 .login h1,h2,h4{
-  color:#f9c751;
+  /*color:#f9c751;*/
 }
 .login h5{
   color:#ffffff;
@@ -58,3 +58,7 @@
   -ms-filter: blur(50px);
   filter: blur(50px);
 }
+.breadcrumb{
+  background-color: #ffffff;
+}
+    
