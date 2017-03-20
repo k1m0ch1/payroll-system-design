@@ -18,6 +18,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <!-- Custom style -->
+  <link rel="stylesheet" href="assets/styles/custom.css">
   <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
         page. However, you can choose any other skin. Make sure you
         apply the skin class to the body tag so the changes take effect.
@@ -108,12 +110,12 @@ desired effect
         <li class="active"><a href="#"><i class="fa fa-home"></i> <span>Dashboard</span></a></li>
         <li class="treeview">
           <a href="#"><i class="fa fa-commenting"></i> <span>Notifikasi</span>            
-              <span class="badge pull-right-container">42</span>            
+              <span class="label label-primary pull-right">42</span>          
           </a>
           <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-commenting"></i> <span>Sistem</span><span class="badge pull-right-container">20</span></a></li>
-            <li><a href="#"><i class="fa fa-commenting"></i> <span>User Login</span><span class="badge pull-right-container">10</span></a></li>
-            <li><a href="#"><i class="fa fa-commenting"></i> <span>Aplikasi</span><span class="badge pull-right-container">12</span></a></li>
+            <li><a href="#"><i class="fa fa-commenting"></i> <span>Sistem</span><span class="label label-primary pull-right">10</span></a></li>
+            <li><a href="#"><i class="fa fa-commenting"></i> <span>User Login</span><span class="label label-primary pull-right">20</span></a></li>
+            <li><a href="#"><i class="fa fa-commenting"></i> <span>Aplikasi</span><span class="label label-danger pull-right">12</span></a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -233,6 +235,7 @@ desired effect
           <!-- AREA CHART -->
           <div class="box box-info">
             <div class="box-header with-border">
+              <i class="fa fa-bar-chart-o"></i>
               <h3 class="box-title">Absensi Karyawan Setiap Bulan</h3>
             </div>
             <div class="box-body">
@@ -275,15 +278,162 @@ desired effect
     </div>
 
     <div class="row">
+      <div class="col-md-12">
+          <div class="box box-info">
+            <div class="box-header with-border">
+              <i class="fa fa-table"></i>
+              <h3 class="box-title">Karyawan yang masa kontrak akan habis dalam waktu 7 hari lagi.</h3>
+            </div>
+            <div class="box-body">
+              <div class="col-md-3">
+                <div class="box-body table-responsive no-padding">
+                  <table class="table table-hover">
+                    <tbody><tr>
+                      <th class="col-md-2">NIK</th>
+                      <th class="col-md-8">Nama</th>
+                    </tr>
+                    <tr>
+                      <td>A02551</td>
+                      <td>Ahmad F.A</td>
+                    </tr>
+                    <tr>
+                      <td>A02551</td>
+                      <td>Ahmad F.A</td>
+                    </tr>
+                    <tr>
+                      <td>A02551</td>
+                      <td>Ahmad F.A</td>
+                    </tr>
+                    <tr>
+                      <td>A02551</td>
+                      <td>Ahmad F.A</td>
+                    </tr>
+                  </tbody></table>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="box-body table-responsive no-padding">
+                  <table class="table table-hover">
+                    <tbody><tr>
+                      <th class="col-md-2">NIK</th>
+                      <th class="col-md-8">Nama</th>
+                    </tr>
+                    <tr>
+                      <td>A02551</td>
+                      <td>Ahmad F.A</td>
+                    </tr>
+                    <tr>
+                      <td>A02551</td>
+                      <td>Ahmad F.A</td>
+                    </tr>
+                    <tr>
+                      <td>A02551</td>
+                      <td>Ahmad F.A</td>
+                    </tr>
+                    <tr>
+                      <td>A02551</td>
+                      <td>Ahmad F.A</td>
+                    </tr>
+                  </tbody></table>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="box-body table-responsive no-padding">
+                  <table class="table table-hover">
+                    <tbody><tr>
+                      <th class="col-md-2">NIK</th>
+                      <th class="col-md-8">Nama</th>
+                    </tr>
+                    <tr>
+                      <td>A02551</td>
+                      <td>Ahmad F.A</td>
+                    </tr>
+                    <tr>
+                      <td>A02551</td>
+                      <td>Ahmad F.A</td>
+                    </tr>
+                    <tr>
+                      <td>A02551</td>
+                      <td>Ahmad F.A</td>
+                    </tr>
+                    <tr>
+                      <td>A02551</td>
+                      <td>Ahmad F.A</td>
+                    </tr>
+                  </tbody></table>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="box-body table-responsive no-padding">
+                  <table class="table table-hover">
+                    <tbody><tr>
+                      <th class="col-md-2">NIK</th>
+                      <th class="col-md-8">Nama</th>
+                    </tr>
+                    <tr>
+                      <td>A02551</td>
+                      <td>Ahmad F.A</td>
+                    </tr>
+                    <tr>
+                      <td>A02551</td>
+                      <td>Ahmad F.A</td>
+                    </tr>
+                    <tr>
+                      <td>A02551</td>
+                      <td>Ahmad F.A</td>
+                    </tr>
+                    <tr>
+                      <td>A02551</td>
+                      <td>Ahmad F.A</td>
+                    </tr>
+                  </tbody></table>
+                </div> 
+              </div>
+            </div>
+            <!-- /.box-body-->
+            <div class="box-footer clearfix">
+              <ul class="pagination pagination-sm no-margin pull-right">
+                <li class="active"><a href="#">PREV</a></li>
+                <li><a href="#" >1</a></li>
+                <li class="active"><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li class="active"><a href="#">NEXT</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- /.box -->
+      </div>      
+    </div>
+
+    <div class="row">
       <div class="col-md-6">
 
-        <!-- DONUT CHART -->
         <div class="box box-danger">
           <div class="box-header with-border">
+            <i class="fa fa-bar-chart-o"></i>
             <h3 class="box-title">Absensi Kemarin</h3>
           </div>
+          <!-- /.box-header -->
           <div class="box-body">
-            <canvas id="pieChart" style="height:250px"></canvas>
+            <div class="row">
+              <div class="col-md-8">
+                <div class="chart-responsive">
+                  <canvas id="absensi-kemarin" height="250"></canvas>
+                </div>
+                <!-- ./chart-responsive -->
+              </div>
+              <!-- /.col -->
+              <div class="col-md-4">
+                <ul class="chart-legend clearfix">
+                  <li><i class="fa fa-circle-o text-red"></i> Cuti</li>
+                  <li><i class="fa fa-circle-o text-green"></i> Masuk</li>
+                  <li><i class="fa fa-circle-o text-yellow"></i> Telat</li>
+                </ul>
+              </div>
+              <!-- /.col -->
+            </div>
+            <!-- /.row -->
           </div>
           <!-- /.box-body -->
         </div>
@@ -516,7 +666,7 @@ desired effect
     //- PIE CHART -
     //-------------
     // Get context with jQuery - using jQuery's .get() method.
-    var pieChartCanvas = $("#pieChart").get(0).getContext("2d");
+    var pieChartCanvas = $("#absensi-kemarin").get(0).getContext("2d");
     var pieChart = new Chart(pieChartCanvas);
     var PieData = [
       {
