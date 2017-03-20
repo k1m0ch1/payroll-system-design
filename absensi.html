@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Absensi</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- bootstrap datepicker -->
+  <link rel="stylesheet" href="plugins/datepicker/datepicker3.css">
+  <!-- Bootstrap time Picker -->
+  <link rel="stylesheet" href="plugins/timepicker/bootstrap-timepicker.min.css">
+  <!-- daterange picker -->
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <!-- Custom style -->
+  <link rel="stylesheet" href="assets/styles/custom.css">
+  <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
+        page. However, you can choose any other skin. Make sure you
+        apply the skin class to the body tag so the changes take effect.
+  -->
+  <link rel="stylesheet" href="dist/css/skins/skin-blue.min.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<!--
+BODY TAG OPTIONS:
+=================
+Apply one or more of the following classes to get the
+desired effect
+|---------------------------------------------------------|
+| SKINS         | skin-blue                               |
+|               | skin-black                              |
+|               | skin-purple                             |
+|               | skin-yellow                             |
+|               | skin-red                                |
+|               | skin-green                              |
+|---------------------------------------------------------|
+|LAYOUT OPTIONS | fixed                                   |
+|               | layout-boxed                            |
+|               | layout-top-nav                          |
+|               | sidebar-collapse                        |
+|               | sidebar-mini                            |
+|---------------------------------------------------------|
+-->
+<body class="hold-transition skin-blue fixed sidebar-mini">
+<div class="wrapper">
+
+  <!-- Main Header -->
+  <header class="main-header">
+
+    <!-- Logo -->
+    <a href="index2.html" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><b>SIAK</b></span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>SIAK</b></span>
+    </a>
+
+    <!-- Header Navbar -->
+    <nav class="navbar navbar-static-top" role="navigation">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+      <!-- Navbar Right Menu -->
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">          
+          <li>
+            <a href="#"><i class="fa fa-gear"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-sign-out"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel">
+        <div class="pull-left image">
+          <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <p>Ahmad F.A</p>
+          <!-- Status -->
+          <a href="#"><i class="fa fa-circle text-success"></i> Administrator Absensi</a>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <ul class="sidebar-menu">
+        <!-- Optionally, you can add icons to the links -->
+        <li><a href="#"><i class="fa fa-home"></i> <span>Dashboard</span></a></li>
+        <li class="treeview">
+          <a href="#"><i class="fa fa-commenting"></i> <span>Notifikasi</span>            
+              <span class="label label-primary pull-right">42</span>          
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#"><i class="fa fa-commenting"></i> <span>Sistem</span><span class="label label-primary pull-right">10</span></a></li>
+            <li><a href="#"><i class="fa fa-commenting"></i> <span>User Login</span><span class="label label-primary pull-right">20</span></a></li>
+            <li><a href="#"><i class="fa fa-commenting"></i> <span>Aplikasi</span><span class="label label-danger pull-right">12</span></a></li>
+          </ul>
+        </li>
+        <li class="treeview active">
+          <a href="#"><i class="fa fa-flask"></i> <span>Data Master</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li class="active"><a href="#"><i class="fa fa-users"></i> <span>Karyawan</span></a></li>
+            <li><a href="#"><i class="fa fa-building"></i> <span>Perusahaan</span></a></li>
+            <li><a href="#"><i class="fa fa-calendar"></i> <span>Libur & Lembur</span></a></li>
+            <li><a href="#"><i class="fa fa-medkit"></i> <span>BPJS</span></a></li>
+          </ul>
+        </li>
+        <li class=""><a href="#"><i class="fa fa-pie-chart"></i> <span>Transaksi</span></a></li>
+        <li class="treeview">
+          <a href="#"><i class="fa fa-table"></i> <span>Laporan</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#"><i class="fa fa-table"></i> <span>Laporan Gaji</span></a></li>
+            <li><a href="#"><i class="fa fa-table"></i> <span>Laporan Lembur</span></a></li>
+            <li><a href="#"><i class="fa fa-table"></i> <span>Laporan BPJS</span></a></li>
+            <li><a href="#"><i class="fa fa-table"></i> <span>Laporan Potongan</span></a></li>
+            <li><a href="#"><i class="fa fa-table"></i> <span>Laporan Absensi & Cuti</span></a></li>
+          </ul>
+        </li>
+        <li class="divider"><hr></li>
+        <li><a href="#"><span>User</span></a></li>
+        <li><a href="#"><span>Pengaturan Sistem</span></a></li>
+        <li><a href="#"><span>Pengaturan Aplikasi</span></a></li>
+      </ul>
+      <!-- /.sidebar-menu -->
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="col-md-12">
+          <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-home"></i> Dashboard</a></li>
+            <li><i class="fa fa-flask"></i> Data Master</li>
+            <li class="active">Absensi</li>
+          </ol>
+      </div>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="col-md-2">
+                <p><h3 class="control-label">Absensi</h3></p>
+              </div>
+          </div>                
+      </div>      
+      <div class="row">
+          <div class="col-md-12">
+            <div class="col-md-2">
+              <label class="control-label">List Karyawan</label>               
+            </div>
+            <div class="col-md-10">
+              <p class=""> A005215 - Ahmad F.A, A005215 - Ahmad F.A, A005215 - Ahmad F.A, A005215 - Ahmad F.A, A005215 - Ahmad F.A, A005215 - Ahmad F.A, A005215 - Ahmad F.A, A005215 - Ahmad F.A, A005215 - Ahmad F.A, A005215 - Ahmad F.A, A005215 - Ahmad F.A </p>
+            
+              <button class="btn btn-primary" id="pilihKaryawan" data-toggle="modal" data-target="#pilihKaryawanModal"><i class="fa fa-plus"></i> Pilih Karyawan</button>                 
+              </div>             
+          </div>                
+      </div>
+
+      <div class="row">
+          <div class="col-md-12">
+              <div class="col-md-2">
+                <p><h4 class="control-label">Update Absensi</h4></p>
+              </div>
+          </div>                
+      </div>
+
+      <div class="row">
+          <div class="col-md-12">
+            <div class="col-md-2">
+              <label class="control-label pull-right">Jam Masuk</label>
+            </div>
+            <div class="col-md-2">
+              <div class="bootstrap-timepicker">
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control timepicker">
+
+                    <div class="input-group-addon">
+                      <i class="fa fa-clock-o"></i>
+                    </div>
+                  </div>
+                  <!-- /.input group -->
+                </div>
+                <!-- /.form group -->
+              </div>
+            </div>
+            <div class="col-md-2">
+              <label class="control-label pull-right">Jam Keluar</label>
+            </div>
+            <div class="col-md-2">
+              <div class="bootstrap-timepicker">
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control timepicker">
+
+                    <div class="input-group-addon">
+                      <i class="fa fa-clock-o"></i>
+                    </div>
+                  </div>
+                  <!-- /.input group -->
+                </div>
+                <!-- /.form group -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <div class="col-md-2">
+              <label class="control-label pull-right">Absen</label>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                  <select class="form-control">
+                    <option>Staus Absen</option>
+                    <option>option 2</option>
+                    <option>option 3</option>
+                    <option>option 4</option>
+                    <option>option 5</option>
+                  </select>
+                </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="keterangan">
+              </div>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary"><i class="fa fa-plus"></i> Simpan</button> 
+            </div>
+          </div>
+
+          <div class="col-md-12">
+                      <div class="col-md-2">
+                        <label class="control-label pull-right">Penentuan Hari (Kerja/Libur)</label>
+                      </div>
+                      <div class="col-md-2">
+                        <div class="form-group">
+                            <div class="input-group date">
+                              <div class="input-group-addon">
+                                <i class="fa fa-calendar"></i>
+                              </div>
+                              <input type="text" class="form-control pull-right" id="datepicker">
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                        <div class="form-group">
+                            <select class="form-control">
+                              <option>Jumlah Hari Kerja</option>
+                              <option>option 2</option>
+                              <option>option 3</option>
+                              <option>option 4</option>
+                              <option>option 5</option>
+                            </select>
+                          </div>
+                      </div>
+                      <div class="col-md-2">
+                        <div class="form-group">
+                            <select class="form-control">
+                              <option>Jenis Hari</option>
+                              <option>option 2</option>
+                              <option>option 3</option>
+                              <option>option 4</option>
+                              <option>option 5</option>
+                            </select>
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <button class="btn btn-primary"><i class="fa fa-plus"></i> Simpan</button> 
+                      </div>
+                    </div>         
+      </div>
+
+      <div class="row">
+          <div class="col-md-12">
+              <div class="col-md-2">
+                <p><h4 class="control-label">Ubah Manual</h4></p>
+              </div>
+          </div>                
+      </div>
+      <div class="row">
+          <div class="col-md-12">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label for="pencarian" class="col-sm-2 control-label">Pencarian</label>
+                <div class="col-sm-2">
+                  <select class="form-control">
+                  <option>Kategori</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                </div>
+                <div class="input-group col-sm-4">
+                  <input type="text" class="form-control">
+                    <span class="input-group-btn">
+                      <button type="button" class="btn btn-primary btn-flat">Search</button>
+                    </span>
+                </div>
+              </div>              
+            </form>              
+          </div>                
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="box">
+            <div class="box-body table-responsive no-padding">
+              <table class="table table-hover">
+                <tbody><tr>
+                  <th class="">#</th>
+                  <th class="">Tanggal</th>
+                  <th class="">Hari</th>
+                  <th class="">NIK</th>
+                  <th class="">Nama</th>
+                  <th class="">Jdl Msk</th>
+                  <th class="">Masuk</th>
+                  <th class="">Jdl Klr</th>
+                  <th class="">Keluar</th>
+                  <th class="">Lembur</th>
+                  <th class="">Dtg Telat</th>
+                  <th class="">Plg Cepat</th>
+                  <th class="">Action</th>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" value=""></td>
+                  <td>2 Agustus 2016</td>
+                  <td>Rabu</td>
+                  <td>A02551</td>
+                  <td>Ahmad F.A</td>
+                  <td>07.00</td>
+                  <td>07.10</td>
+                  <td>11.30</td>
+                  <td>11.30</td>
+                  <td>0</td>
+                  <td>0.10</td>
+                  <td>0</td>
+                  <td>
+                    <div class="btn-group btn-group-xs" role="group" aria-label="...">
+                      <button type="button" class="btn btn-default"><i class="fa fa-trash"></i></button>
+                      <button type="button" class="btn btn-default"><i class="fa fa-pencil"></i></button>
+                      <button type="button" class="btn btn-default"><i class="fa fa-user"></i></button>
+                    </div>                  
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" value=""></td>
+                  <td>2 Agustus 2016</td>
+                  <td>Rabu</td>
+                  <td>A02551</td>
+                  <td>Ahmad F.A</td>
+                  <td>07.00</td>
+                  <td>07.10</td>
+                  <td>11.30</td>
+                  <td>11.30</td>
+                  <td>0</td>
+                  <td>0.10</td>
+                  <td>0</td>
+                  <td>
+                    <div class="btn-group btn-group-xs" role="group" aria-label="...">
+                      <button type="button" class="btn btn-default"><i class="fa fa-trash"></i></button>
+                      <button type="button" class="btn btn-default"><i class="fa fa-pencil"></i></button>
+                      <button type="button" class="btn btn-default"><i class="fa fa-user"></i></button>
+                    </div>                  
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" value=""></td>
+                  <td>2 Agustus 2016</td>
+                  <td>Rabu</td>
+                  <td>A02551</td>
+                  <td>Ahmad F.A</td>
+                  <td>07.00</td>
+                  <td>07.10</td>
+                  <td>11.30</td>
+                  <td>11.30</td>
+                  <td>0</td>
+                  <td>0.10</td>
+                  <td>0</td>
+                  <td>
+                    <div class="btn-group btn-group-xs" role="group" aria-label="...">
+                      <button type="button" class="btn btn-default"><i class="fa fa-trash"></i></button>
+                      <button type="button" class="btn btn-default"><i class="fa fa-pencil"></i></button>
+                      <button type="button" class="btn btn-default"><i class="fa fa-user"></i></button>
+                    </div>                  
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" value=""></td>
+                  <td>2 Agustus 2016</td>
+                  <td>Rabu</td>
+                  <td>A02551</td>
+                  <td>Ahmad F.A</td>
+                  <td>07.00</td>
+                  <td>07.10</td>
+                  <td>11.30</td>
+                  <td>11.30</td>
+                  <td>0</td>
+                  <td>0.10</td>
+                  <td>0</td>
+                  <td>
+                    <div class="btn-group btn-group-xs" role="group" aria-label="...">
+                      <button type="button" class="btn btn-default"><i class="fa fa-trash"></i></button>
+                      <button type="button" class="btn btn-default"><i class="fa fa-pencil"></i></button>
+                      <button type="button" class="btn btn-default"><i class="fa fa-user"></i></button>
+                    </div>                  
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" value=""></td>
+                  <td>2 Agustus 2016</td>
+                  <td>Rabu</td>
+                  <td>A02551</td>
+                  <td>Ahmad F.A</td>
+                  <td>07.00</td>
+                  <td>07.10</td>
+                  <td>11.30</td>
+                  <td>11.30</td>
+                  <td>0</td>
+                  <td>0.10</td>
+                  <td>0</td>
+                  <td>
+                    <div class="btn-group btn-group-xs" role="group" aria-label="...">
+                      <button type="button" class="btn btn-default"><i class="fa fa-trash"></i></button>
+                      <button type="button" class="btn btn-default"><i class="fa fa-pencil"></i></button>
+                      <button type="button" class="btn btn-default"><i class="fa fa-user"></i></button>
+                    </div>                  
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" value=""></td>
+                  <td>2 Agustus 2016</td>
+                  <td>Rabu</td>
+                  <td>A02551</td>
+                  <td>Ahmad F.A</td>
+                  <td>07.00</td>
+                  <td>07.10</td>
+                  <td>11.30</td>
+                  <td>11.30</td>
+                  <td>0</td>
+                  <td>0.10</td>
+                  <td>0</td>
+                  <td>
+                    <div class="btn-group btn-group-xs" role="group" aria-label="...">
+                      <button type="button" class="btn btn-default"><i class="fa fa-trash"></i></button>
+                      <button type="button" class="btn btn-default"><i class="fa fa-pencil"></i></button>
+                      <button type="button" class="btn btn-default"><i class="fa fa-user"></i></button>
+                    </div>                  
+                  </td>
+                </tr>
+
+
+              </tbody></table>
+
+            </div>
+            
+            <!-- /.box-body -->
+            <div class="box-footer clearfix">
+              
+              <div class="row">
+                <div class="col-md-4 col-md-offset-8">
+                  <ul class="pagination pagination-sm no-margin pull-right">
+                    <li class="active"><a href="#">PREV</a></li>
+                    <li><a href="#" >1</a></li>
+                    <li class="active"><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li class="active"><a href="#">NEXT</a></li>
+                  </ul>
+                </div>               
+              </div>
+              
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="col-md-2">
+                        <p><h4 class="control-label">Ubah yang dipilih</h4></p>
+                      </div>
+                  </div>                
+              </div>
+              <div class="col-md-8 ">
+                <div class="col-md-3">
+                  <label class="control-label">Ubah jam lembur</label>
+                </div>
+                <div class="col-md-3">                
+                  <div class="form-group">
+                     <input type="text" class="form-control" placeholder="Lembur (jam)">
+                    </div>
+                </div>
+                <div class="col-md-2">                
+                  <div class="form-group">
+                      <select class="form-control ">
+                        <option>SPL</option>
+                        <option>option 2</option>
+                        <option>option 3</option>
+                      </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary"><i class="fa fa-plus"></i> Simpan</button> 
+                </div>
+              </div>
+              
+              <div class="col-md-8 ">
+                <div class="col-md-3">
+                  <label class="control-label">Ubah jam masuk</label>
+                </div>
+                <div class="col-md-5">
+                  <div class="form-group">
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                      </div>
+                      <input type="text" class="form-control pull-right" id="reservationtime">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary"><i class="fa fa-plus"></i> Simpan</button> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.box -->
+        </div>
+      </div>
+      <!-- Your Page Content Here -->
+
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <!-- To the right -->
+    <div class="pull-right hidden-xs">
+      Anything you want
+    </div>
+    <!-- Default to the left -->
+    <strong>Copyright &copy; 2016 <a href="#">Company</a>.</strong> All rights reserved.
+  </footer>
+
+</div>
+<!-- ./wrapper -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="pilihKaryawanModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h3 class="modal-title">Pilih Karyawan</h3>
+          <small>Pilih karyawan terlebih dahulu untuk menambahkan atau mengubah Absensi</small>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+              <div class="col-md-12">
+                <form class="form-horizontal">
+                  <div class="form-group">
+                    <label for="pencarian" class="col-sm-2 control-label">Pencarian</label>
+                    <div class="col-sm-3">
+                      <select class="form-control">
+                      <option>Kategori</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                    </div>
+                    <div class="input-group col-sm-6">
+                      <input type="text" class="form-control">
+                        <span class="input-group-btn">
+                          <button type="button" class="btn btn-primary btn-flat">Search</button>
+                        </span>
+                    </div>
+                  </div>              
+                </form>              
+              </div>                
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="box">
+                <div class="box-body table-responsive no-padding">
+                  <table class="table table-hover">
+                    <tbody><tr>
+                      <th class="col-md-1">#</th>
+                      <th class="col-md-2">NIK</th>
+                      <th class="col-md-8">Nama</th>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" value=""></td>
+                      <td>A02551</td>
+                      <td>Ahmad F.A</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" value=""></td>
+                      <td>A02551</td>
+                      <td>Ahmad F.A</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" value=""></td>
+                      <td>A02551</td>
+                      <td>Ahmad F.A</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" value=""></td>
+                      <td>A02551</td>
+                      <td>Ahmad F.A</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" value=""></td>
+                      <td>A02551</td>
+                      <td>Ahmad F.A</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" value=""></td>
+                      <td>A02551</td>
+                      <td>Ahmad F.A</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" value=""></td>
+                      <td>A02551</td>
+                      <td>Ahmad F.A</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" value=""></td>
+                      <td>A02551</td>
+                      <td>Ahmad F.A</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" value=""></td>
+                      <td>A02551</td>
+                      <td>Ahmad F.A</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" value=""></td>
+                      <td>A02551</td>
+                      <td>Ahmad F.A</td>
+                    </tr>
+
+                  </tbody></table>
+
+                </div>
+                <!-- /.box-body -->
+                <div class="box-footer clearfix">
+                  <ul class="pagination pagination-sm no-margin pull-right">
+                    <li class="active"><a href="#">PREV</a></li>
+                    <li><a href="#" >1</a></li>
+                    <li class="active"><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li class="active"><a href="#">NEXT</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- /.box -->
+            </div>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Simpan</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+<!-- REQUIRED JS SCRIPTS -->
+
+<!-- jQuery 2.2.3 -->
+<script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/app.min.js"></script>
+<!-- bootstrap time picker -->
+<script src="plugins/timepicker/bootstrap-timepicker.min.js"></script>
+<!-- date-range-picker -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+<script src="plugins/daterangepicker/daterangepicker.js"></script>
+<!-- bootstrap datepicker -->
+<script src="plugins/datepicker/bootstrap-datepicker.js"></script>
+<!-- bootstrap color picker -->
+<script src="plugins/colorpicker/bootstrap-colorpicker.min.js"></script>
+<!-- bootstrap time picker -->
+<script src="plugins/timepicker/bootstrap-timepicker.min.js"></script>
+<!-- SlimScroll 1.3.0 -->
+<script src="plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<script>
+  $(function () {
+    
+    $('#datepicker').datepicker({
+      autoclose: true
+    });
+    //Date range picker
+    $('#reservation').daterangepicker();
+    //Date range picker with time picker
+    $('#reservationtime').daterangepicker({timePicker: true, timePickerIncrement: 30, format: 'MM/DD/YYYY h:mm A'});
+    //Timepicker
+    $(".timepicker").timepicker({
+      showInputs: false
+    });
+
+  });
+</script>
+<!-- Optionally, you can add Slimscroll and FastClick plugins.
+     Both of these plugins are recommended to enhance the
+     user experience. Slimscroll is required when using the
+     fixed layout. -->
+</body>
+</html>
